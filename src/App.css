@@ -1,12 +1,22 @@
+body {
+  background-image: linear-gradient(
+    140deg,
+    hsl(248deg 73% 15%) 0%,
+    hsl(248deg 72% 20%) 11%,
+    hsl(248deg 71% 25%) 36%,
+    hsl(248deg 70% 30%) 76%,
+    hsl(248deg 68% 36%) 100%
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 .App {
-  text-align: center;
-}
-
-form {
-  font-size: 1rem;
-}
-
-form label {
-  display: block;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20vh auto;
+  background-color: #00000020;
+  padding: 70px;
+  width: 400px;
 }

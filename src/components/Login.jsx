@@ -1,3 +1,4 @@
+import './login.css'
 import { useState } from 'react'
 
 function Login() {
@@ -17,7 +18,7 @@ function Login() {
 
   return (
     <>
-      <h1>login form</h1>
+      <h1>Login form</h1>
       <form onSubmit={handleFormSubmit}>
         <label>
           Username:

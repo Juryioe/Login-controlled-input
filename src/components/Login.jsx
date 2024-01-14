@@ -2,18 +2,16 @@ import './login.css'
 import { useState } from 'react'
 
 function Login() {
-  const [userName, setUserName] = useState('')
-  const [password, setPassword] = useState('')
+  const [data, setData] = useState({ username: '', password: '' })
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
 
-    const userData = {
-      userName,
-      password,
-    }
+    console.log(data)
+  }
 
-    console.log(userData)
+  const handleInputChange = (e, name) => {
+    setData({ ...data, [name]: e.target.value })
   }
 
   return (
@@ -24,16 +22,16 @@ function Login() {
           Username:
           <input
             type="text"
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
+            value={data.username}
+            onChange={(e) => handleInputChange(e, 'username')}
           />
         </label>
         <label>
           Password:
           <input
             type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={data.password}
+            onChange={(e) => handleInputChange(e, 'password')}
           />
         </label>
         <button type="submit">Login</button>

@@ -19,4 +19,5 @@ body {
   background-color: #00000020;
   padding: 70px;
   width: 400px;
+  border: 2px solid rgba(128, 128, 128, 0.529);
 }
